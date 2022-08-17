@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.react-calendar{
+  box-shadow: 8px 8px 15px  rgb(144, 144, 144) !important;
+  border-radius: 15px 15px 15px 15px !important;
+  padding: 10px !important;
+  border:none !important;
+}
+
+.react-calendar__navigation{
+  margin-bottom: 0px  !important;
+  background-color: white !important;
+  border-radius: 15px 15px 0px 0px !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.react-calendar__viewContainer{
+  background-color: white !important;
+  border-radius: 0px 0px 15px 15px !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.react-calendar button{
+  border-radius: 10px !important;
+  height: 40px;
+  width: 40px;
+}
+
+
+.react-datetime-picker__wrapper{
+  border : none !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
