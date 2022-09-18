@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -102,7 +103,7 @@ app.delete("/events/:id", async (req, res, next) => {
 });
 
 mongoose
-  .connect("mongodb://localhost:27017/calender-events")
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     app.listen(5000, () => {
       console.log("Server started on port 5000");
